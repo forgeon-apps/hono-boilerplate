@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "framework": "hono",
+  "type": "server",
+  "build_system": "nixpacks",
+  "deployment_target": "docker",
+  "runtime": "node",
+  "version": "20",
+  "port": 3000,
+  "build": "corepack enable || true; corepack prepare pnpm@8.15.9 --activate; pnpm install --frozen-lockfile=false; if node -e \"const p=require('./package.json');process.exit(p.scripts&&p.scripts.build?0:1)\"; then pnpm run build; else echo '[forgeon] no build script; skipping'; fi",
+  "start": "corepack enable || true; corepack prepare pnpm@8.15.9 --activate; if node -e \"const p=require('./package.json');process.exit(p.scripts&&p.scripts.start?0:1)\"; then pnpm start; elif node -e \"const p=require('./package.json');process.exit(p.scripts&&p.scripts.dev?0:1)\"; then pnpm dev; else node server.js; fi",
+  "build_meta": {
+    "pm": "pnpm",
+    "notes": "For Hono playgrounds that only have scripts.dev (tsx), Forgeon will run dev as a fallback. Add scripts.start for production."
+  }
+}
