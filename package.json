@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx ./src/index.ts",
-    "start": "node --enable-source-maps --loader tsx ./src/index.ts"
+    "start": "node --enable-source-maps --import tsx ./src/index.ts"
   },
   "dependencies": {
     "hono": "^4.8.9",
