@@ -1,4 +1,4 @@
-[![Deploy with Forgeon](https://forgeon.io/button)](https://forgeon.io/new/clone?repository-url=https://github.com/forgeon/examples/tree/main/framework-boilerplates/hono&template=hono)
+[![Deploy with Forgeon](https://forgeon.io/images/button-deploy/png/deploy-to-forgeon-6.png)](https://forgeon.io/projects?import=1&no_upload=1&auto=0&git_url=https%3A%2F%2Fgithub.com%2Fforgeon-apps%2Fhono-boilerplate)
 
 Live Example: https://hono.forgeon.dev/
 
@@ -30,3 +30,7 @@ To deploy:
 npm install
 forge deploy
 ```
+
+## Wanna try ?
+
+[![Deploy with Forgeon](https://forgeon.io/images/button-deploy/png/deploy-to-forgeon-6.png)](https://forgeon.io/projects?import=1&no_upload=1&auto=0&git_url=https%3A%2F%2Fgithub.com%2Fforgeon-apps%2Fhono-boilerplate)
